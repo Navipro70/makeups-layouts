@@ -1,0 +1,70 @@
+/*----------------COMMON----------------*/
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+@media (max-width: 1200px) {
+    .container {
+        max-width: 978px;
+    }
+}
+
+@media (max-width: 992px) {
+    .container {
+        max-width: 978px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .container {
+        max-width: 750px;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        max-width: none;
+    }
+}
+
+
+/* -------------HEADER------------ */
+
+.header {
+    background-color: indianred;
+    height: 10vh;
+}
+
+.header_content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10px;
+}
+
+.card_wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.card {
+    display: flex;
+    border: lightgreen 2px solid;
+    padding: 10px;
+    flex-basis: 33%;
+    min-width: 250px;
+}
