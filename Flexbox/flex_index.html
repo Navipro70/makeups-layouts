@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./styles/media.css">
     <link rel="stylesheet" href="./styles/flex.css">
     <link href="https://fonts.googleapis.com/css2?family=MuseoModerno&display=swap" rel="stylesheet">
     <title>Flex practice</title>
@@ -12,6 +13,17 @@
     <div class="first_wrapper">
         <div class="header_content container">
             <h1>MISOCIAL</h1>
+            <a href="" id="m-menu-link">
+                <img src="./assets/burger-icon.png" alt="burger-icon">
+            </a>
+            <ul class="burger-menu">
+                <li id="menu-close"><a href=""><img src="./assets/close-menu.png" alt="close-menu"></a></li>
+                <li><a href="">Home</a></li>
+                <li><a href="">why MISOCIAL</a></li>
+                <li><a href="">Features</a></li>
+                <li><a href="">Articles</a></li>
+                <li><a href="">Pricing</a></li>
+            </ul>
             <ul class="nav_container">
                 <li><a href="">Home</a></li>
                 <li><a href="">why MISOCIAL</a></li>
@@ -84,7 +96,7 @@
         </div>
         <div class="footer-info container">
             <p>@ 2017 Impression & Tranmautritam. Make the right Impression</p>
-            <div>
+            <div class="social-networks">
                 <a href="facebook.com"><img src="./assets/facebook.svg" alt="social-network"></a>
                 <a href="twitter.com"><img src="./assets/twitter.svg" alt="social-network"></a>
                 <a href="google.com"><img src="./assets/google.svg" alt="social-network"></a>
@@ -93,5 +105,20 @@
         </div>
     </footer>
 </div>
+<script>
+    (function menuBurger() {
+        let menuBurger = document.getElementsByClassName("burger-menu")[0];
+        let menuHref = document.getElementById("m-menu-link");
+        let closeMenuHref = document.getElementById("menu-close");
+        menuHref.onclick = (e) => {
+            e.preventDefault();
+            menuBurger.classList.add("burger-menu-active");
+        };
+        closeMenuHref.onclick = (e) => {
+            e.preventDefault();
+            menuBurger.classList.remove("burger-menu-active")
+        }
+    })()
+</script>
 </body>
 </html>
