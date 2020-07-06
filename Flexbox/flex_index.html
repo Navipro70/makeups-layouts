@@ -3,33 +3,95 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="flex.css">
+    <link rel="stylesheet" href="./styles/flex.css">
+    <link href="https://fonts.googleapis.com/css2?family=MuseoModerno&display=swap" rel="stylesheet">
     <title>Flex practice</title>
 </head>
 <body>
-<header class="header">
-    <div class="container header_content">
-        <h4>Logo + site name</h4>
-        <p>Sidebar</p>
+<div class="main">
+    <div class="first_wrapper">
+        <div class="header_content container">
+            <h1>MISOCIAL</h1>
+            <ul class="nav_container">
+                <li><a href="">Home</a></li>
+                <li><a href="">why MISOCIAL</a></li>
+                <li><a href="">Features</a></li>
+                <li><a href="">Articles</a></li>
+                <li><a href="">Pricing</a></li>
+            </ul>
+        </div>
+        <div class="central_info">
+            <h3>Social marketing and analytics</h3>
+            <h1>Pricing Table</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias dignissimos doloremque dolores quisquam velit?</p>
+        </div>
+        <div class="arrow">
+            <i class="down"></i>
+        </div>
     </div>
-</header>
-<div class="wrapper">
-    <div class="container">
-        <div class="card_wrapper">
-            <div class="card">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum earum hic itaque iure modi mollitia
-                    non quam quidem recusandae sed.</p>
+    <div class="second_wrapper">
+        <div class='container'>
+            <div class="central_info select_plan">
+                <h3>MISOCIAL</h3>
+                <h1>Select a Plan</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam facere placeat praesentium voluptatum.</p>
             </div>
-            <div class="card">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus culpa debitis dolores eius hic
-                    iure provident quibusdam repudiandae tempora ut!</p>
-            </div>
-            <div class="card">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto assumenda commodi culpa
-                    cupiditate dolore doloribus ea quas sequi veniam voluptas.</p>
+            <div class="price_plan">
+                <div class="card">
+                    <img src="./assets/price-logo.png" alt="">
+                    <h4>PERSONAL</h4>
+                    <span><sup>$</sup>0<small>/month</small></span>
+                    <p>LOREM Lorem lorem lorem ipsum dolor sit amet, consectetur adipisicing elit. A deserunt id in maxime nam, nostrum reprehenderit sed sunt temporibus voluptate?</p>
+                    <button class="btn-standard">select plan</button>
+                </div>
+                <div class="card">
+                    <img src="./assets/price-logo.png" alt="">
+                    <h4>PERSONAL</h4>
+                    <span><sup>$</sup>29<small>/month</small></span>
+                    <p>lorem Lorem ipsum dolor sit amet, consectetur adipisicing elit. A deserunt id in maxime nam, nostrum reprehenderit sed sunt temporibus voluptate?</p>
+                    <button class="btn-standard">select plan</button>
+                </div>
+                <div class="card">
+                    <img src="./assets/price-logo.png" alt="">
+                    <h4>PERSONAL</h4>
+                    <span><sup>$</sup>49<small>/month</small></span>
+                    <p>Lorem ipsum dolor sit amet, consectetur.Lorem ipsum dolor sit amet, consectetur adipisicing elit. A deserunt id in maxime nam, nostrum reprehenderit sed sunt temporibus voluptate?</p>
+                    <button class="btn-standard">select plan</button>
+                </div>
             </div>
         </div>
     </div>
+    <div class="third_wrapper">
+        <div class="background-map">
+            <h4>Social marketing & analytics</h4>
+            <h1>Take control of your data</h1>
+            <div>
+                <button class="btn-standard btn-white">get started</button>
+                <button class="btn-standard btn-white">explore features</button>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="header_content container footer-header">
+            <h1>MISOCIAL</h1>
+            <ul class="nav_container">
+                <li><a href="">Home</a></li>
+                <li><a href="">why MISOCIAL</a></li>
+                <li><a href="">Features</a></li>
+                <li><a href="">Articles</a></li>
+                <li><a href="">Pricing</a></li>
+            </ul>
+        </div>
+        <div class="footer-info container">
+            <p>@ 2017 Impression & Tranmautritam. Make the right Impression</p>
+            <div>
+                <a href="facebook.com"><img src="./assets/facebook.svg" alt="social-network"></a>
+                <a href="twitter.com"><img src="./assets/twitter.svg" alt="social-network"></a>
+                <a href="google.com"><img src="./assets/google.svg" alt="social-network"></a>
+                <a href="instagram.com"><img src="./assets/instagram.svg" alt="social-network"></a>
+            </div>
+        </div>
+    </footer>
 </div>
 </body>
 </html>
